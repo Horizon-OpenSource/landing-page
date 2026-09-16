@@ -40,6 +40,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 80px;
 }
 
 body {
@@ -112,4 +113,34 @@ textarea {
 .button--primary:hover,
 .button--primary:focus-visible {
     background-color: var(--dark-green);
+}
+
+/* Reveal Animations */
+
+.reveal {
+    --reveal-delay: 0ms;
+
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.65s ease, transform 0.65s ease;
+    transition-delay: var(--reveal-delay);
+}
+
+.reveal.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+@media (max-width: 1100px) {
+    html {
+        scroll-padding-top: 72px;
+    }
 }
