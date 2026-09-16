@@ -37,7 +37,7 @@ if (menuToggle && navigation) {
 
     window.addEventListener("resize", () => {
 
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 1100) {
             closeMobileMenu();
         }
 
