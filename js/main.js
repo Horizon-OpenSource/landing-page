@@ -44,3 +44,35 @@ if (menuToggle && navigation) {
     });
 
 }
+
+const revealElements = document.querySelectorAll(
+    ".hero__content, .hero__visual, " +
+    ".problem-benefits__problem, .benefit-card, " +
+    ".segments__header, .segment-card, " +
+    ".features__header, .feature-card, " +
+    ".scopes__header, .scope-card, " +
+    ".how-it-works__header, .process-step"
+);
+
+if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) return;
+
+            entry.target.classList.add("is-visible");
+            observer.unobserve(entry.target);
+        });
+    }, {
+        threshold: 0.12
+    });
+
+    revealElements.forEach((element, index) => {
+        element.classList.add("reveal");
+        element.style.setProperty("--reveal-delay", `${(index % 5) * 60}ms`);
+        revealObserver.observe(element);
+    });
+} else {
+    revealElements.forEach((element) => {
+        element.classList.add("is-visible");
+    });
+}
