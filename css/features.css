@@ -7,11 +7,13 @@
 
 .features__header {
     max-width: 760px;
-    margin-bottom: 48px;
+    margin: 0 auto 48px;
+    text-align: center;
 }
 
 .features__intro {
-    margin-top: 20px;
+    max-width: 720px;
+    margin: 20px auto 0;
     color: var(--slate-600);
     font-size: 1rem;
     line-height: 1.7;
@@ -92,6 +94,19 @@
     .feature-card:last-child {
         grid-column: 1 / -1;
         min-height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .features__header {
+        max-width: 760px;
+        margin: 0 auto 48px;
+        text-align: center;
+    }
+
+    .features__intro {
+        max-width: 720px;
+        margin: 20px auto 0;
     }
 }
 
