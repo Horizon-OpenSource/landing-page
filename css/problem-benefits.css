@@ -79,6 +79,20 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .problem-benefits__problem {
+        max-width: 760px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .problem-benefits__description {
+        max-width: 720px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 @media (max-width: 768px) {
     .problem-benefits {
         padding: 64px 0;

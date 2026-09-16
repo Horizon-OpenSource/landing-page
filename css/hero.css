@@ -280,6 +280,22 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .hero__content {
+        max-width: 760px;
+        margin-inline: auto;
+        text-align: center;
+    }
+
+    .hero__description {
+        margin-inline: auto;
+    }
+
+    .hero__actions {
+        justify-content: center;
+    }
+}
+
 @media (max-width: 768px) {
     /* Hero */
     .hero {

@@ -85,6 +85,30 @@
     }
 }
 
+@media (min-width: 769px) and (max-width: 1024px) {
+    .how-it-works__steps {
+        gap: 48px 24px;
+    }
+
+    .process-step:nth-child(1)::after,
+    .process-step:nth-child(2)::after,
+    .process-step:nth-child(4)::after {
+        content: "";
+        position: absolute;
+        top: 27px;
+        left: calc(50% + 28px);
+        width: calc(100% - 32px);
+        height: 2px;
+        background-color: var(--border);
+        z-index: 0;
+    }
+
+    .process-step__number {
+        position: relative;
+        z-index: 1;
+    }
+}
+
 @media (max-width: 768px) {
     .how-it-works {
         padding: 64px 0;
