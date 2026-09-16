@@ -63,3 +63,44 @@
     font-size: 0.9375rem;
     line-height: 1.6;
 }
+
+@media (max-width: 1024px) {
+    .problem-benefits {
+        padding: 80px 0;
+    }
+
+    .problem-benefits__container {
+        grid-template-columns: 1fr;
+        gap: 48px;
+    }
+
+    .problem-benefits__problem {
+        max-width: 720px;
+    }
+}
+
+@media (max-width: 768px) {
+    .problem-benefits {
+        padding: 64px 0;
+    }
+
+    .problem-benefits__container {
+        gap: 40px;
+    }
+
+    .problem-benefits__description {
+        margin-top: 20px;
+    }
+
+    .benefit-card {
+        grid-template-columns: 40px 1fr;
+        gap: 16px;
+        padding: 20px;
+    }
+
+    .benefit-card__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+}
