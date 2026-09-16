@@ -1,0 +1,131 @@
+/* Header */
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--border);
+}
+
+.navbar {
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-4);
+}
+
+.navbar__brand {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.navbar__logo {
+    width: 152px;
+    height: auto;
+}
+
+.navbar__navigation {
+    margin-left: auto;
+}
+
+.navbar__links {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-4);
+    list-style: none;
+}
+
+.navbar__link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+    color: var(--slate-600);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    transition:
+            color 0.2s ease,
+            background-color 0.2s ease;
+}
+
+.navbar__menu-toggle {
+    display: none;
+
+    width: 44px;
+    height: 44px;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+
+    padding: 0;
+
+    color: var(--charcoal);
+    background: transparent;
+
+    border: 0;
+    border-radius: 4px;
+
+    cursor: pointer;
+}
+
+.navbar__menu-line {
+    width: 22px;
+    height: 2px;
+
+    background-color: currentColor;
+    border-radius: 2px;
+
+    transition:
+            transform 0.2s ease,
+            opacity 0.2s ease;
+}
+
+.navbar__link:hover,
+.navbar__link:focus-visible {
+    color: var(--primary-green);
+}
+
+.navbar__link--active {
+    color: var(--primary-green);
+}
+
+.navbar__link--active::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    left: 0;
+    height: 2px;
+    background-color: var(--primary-green);
+    border-radius: 2px;
+}
+
+.navbar__actions {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-2);
+}
+
+.language-selector {
+    min-height: 44px;
+    padding: 0 var(--spacing-2);
+    color: var(--slate-600);
+    background: transparent;
+    border: 0;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.language-selector:hover,
+.language-selector:focus-visible {
+    color: var(--primary-green);
+    background-color: var(--surface);
+}
