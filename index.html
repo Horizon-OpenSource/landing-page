@@ -23,7 +23,7 @@
             <img class="navbar__logo" src="assets/images/ecotrack-logo.png" alt="EcoTrack">
         </a>
 
-        <nav class="navbar__navigation" aria-label="Primary navigation">
+        <nav id="primary-navigation" class="navbar__navigation" aria-label="Primary navigation">
             <ul class="navbar__links">
                 <li>
                     <a class="navbar__link navbar__link--active" href="#home">Home</a>
@@ -47,6 +47,13 @@
             <button class="language-selector" type="button" aria-label="Change language">
                 EN / ES
             </button>
+
+            <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+                <span class="navbar__menu-line"></span>
+                <span class="navbar__menu-line"></span>
+                <span class="navbar__menu-line"></span>
+            </button>
+
             <a class="button button--primary navbar__cta" href="#contact">
                 Get Started
             </a>
