@@ -258,6 +258,47 @@
     font-size: 0.6875rem;
 }
 
+/* Hero Entrance Animation */
+
+@keyframes hero-content-in {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes hero-dashboard-in {
+    from {
+        opacity: 0;
+        transform: translateX(24px) scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+}
+
+.hero__content {
+    animation: hero-content-in 0.7s ease-out both;
+}
+
+.hero__visual {
+    animation: hero-dashboard-in 0.8s ease-out 0.12s both;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .hero__content,
+    .hero__visual {
+        animation: none;
+    }
+}
+
 @media (max-width: 1024px) {
     .hero {
         min-height: auto;

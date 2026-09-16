@@ -46,7 +46,6 @@ if (menuToggle && navigation) {
 }
 
 const revealElements = document.querySelectorAll(
-    ".hero__content, .hero__visual, " +
     ".problem-benefits__problem, .benefit-card, " +
     ".segments__header, .segment-card, " +
     ".features__header, .feature-card, " +
