@@ -15,11 +15,51 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <main>
-        <!-- EcoTrack landing page sections will be implemented here. -->
-    </main>
 
-    <script src="js/i18n.js"></script>
-    <script src="js/main.js"></script>
+<header class="site-header">
+    <div class="container navbar">
+
+        <a class="navbar__brand" href="#home" aria-label="EcoTrack home">
+            <img class="navbar__logo" src="assets/images/ecotrack-logo.png" alt="EcoTrack">
+        </a>
+
+        <nav class="navbar__navigation" aria-label="Primary navigation">
+            <ul class="navbar__links">
+                <li>
+                    <a class="navbar__link navbar__link--active" href="#home">Home</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#features">Features</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#how-it-works">How It Works</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#plans">Plans</a>
+                </li>
+                <li>
+                    <a class="navbar__link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="navbar__actions">
+            <button class="language-selector" type="button" aria-label="Change language">
+                EN / ES
+            </button>
+            <a class="button button--primary navbar__cta" href="#contact">
+                Get Started
+            </a>
+        </div>
+
+    </div>
+</header>
+
+<main id="home">
+    <!-- EcoTrack landing page sections will be implemented here. -->
+</main>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
