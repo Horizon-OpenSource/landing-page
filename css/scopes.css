@@ -1,0 +1,120 @@
+/* Emission Scopes */
+
+.scopes {
+    padding: 96px 0;
+    background-color: var(--surface);
+}
+
+.scopes__header {
+    max-width: 760px;
+    margin: 0 auto 48px;
+    text-align: center;
+}
+
+.scopes__intro {
+    margin-top: 20px;
+    color: var(--slate-600);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.scopes__grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.scope-card {
+    position: relative;
+    min-height: 280px;
+    padding: 32px;
+    overflow: hidden;
+    background-color: #ffffff;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgb(38 50 56 / 5%);
+}
+
+.scope-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 4px;
+    background-color: var(--primary-green);
+}
+
+.scope-card:nth-child(2)::before {
+    background-color: var(--primary-teal);
+}
+
+.scope-card:nth-child(3)::before {
+    background-color: var(--dark-teal);
+}
+
+.scope-card__label {
+    display: inline-flex;
+    margin-bottom: 24px;
+    padding: 6px 10px;
+    color: var(--dark-green);
+    background-color: var(--light-green);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.scope-card h3 {
+    margin-bottom: 12px;
+    color: var(--charcoal);
+    font-size: 1.25rem;
+}
+
+.scope-card p {
+    margin-bottom: 24px;
+    color: var(--slate-600);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+}
+
+.scope-card span {
+    color: var(--dark-teal);
+    font-size: 0.8125rem;
+    font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+    .scopes {
+        padding: 80px 0;
+    }
+
+    .scopes__grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 16px;
+    }
+
+    .scope-card {
+        padding: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .scopes {
+        padding: 64px 0;
+    }
+
+    .scopes__header {
+        margin-bottom: 32px;
+        text-align: left;
+    }
+
+    .scopes__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .scope-card {
+        min-height: auto;
+        padding: 24px 20px;
+    }
+}
