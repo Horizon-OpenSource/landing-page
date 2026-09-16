@@ -45,6 +45,68 @@ if (menuToggle && navigation) {
 
 }
 
+/* Active Navigation */
+
+const siteHeader = document.querySelector(".site-header");
+
+const navigationSections = Array.from(navigationLinks)
+    .map((link) => {
+        const target = link.getAttribute("href");
+
+        if (!target || !target.startsWith("#")) return null;
+
+        const section = document.querySelector(target);
+
+        return section ? { link, section } : null;
+    })
+    .filter(Boolean);
+
+function setActiveNavigation(activeId) {
+    navigationLinks.forEach((link) => {
+        const isActive = link.getAttribute("href") === `#${activeId}`;
+
+        link.classList.toggle("navbar__link--active", isActive);
+
+        if (isActive) {
+            link.setAttribute("aria-current", "page");
+        } else {
+            link.removeAttribute("aria-current");
+        }
+    });
+}
+
+function updateActiveNavigation() {
+    if (!navigationSections.length) return;
+
+    const headerHeight = siteHeader?.offsetHeight ?? 80;
+    const activationPoint = window.scrollY + headerHeight + 40;
+
+    let currentSection = navigationSections[0].section.id;
+
+    navigationSections.forEach(({ section }) => {
+        if (section.offsetTop <= activationPoint) {
+            currentSection = section.id;
+        }
+    });
+
+    setActiveNavigation(currentSection);
+}
+
+navigationLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+        const target = link.getAttribute("href");
+
+        if (target?.startsWith("#")) {
+            setActiveNavigation(target.substring(1));
+        }
+    });
+});
+
+window.addEventListener("scroll", updateActiveNavigation, { passive: true });
+window.addEventListener("resize", updateActiveNavigation);
+
+updateActiveNavigation();
+
 const revealElements = document.querySelectorAll(
     ".problem-benefits__problem, .benefit-card, " +
     ".segments__header, .segment-card, " +
