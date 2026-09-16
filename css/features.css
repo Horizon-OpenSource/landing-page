@@ -1,0 +1,122 @@
+/* Features */
+
+.features {
+    padding: 96px 0;
+    background-color: #ffffff;
+}
+
+.features__header {
+    max-width: 760px;
+    margin-bottom: 48px;
+}
+
+.features__intro {
+    margin-top: 20px;
+    color: var(--slate-600);
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.features__grid {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.feature-card {
+    grid-column: span 2;
+    min-height: 260px;
+    padding: 28px;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.feature-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.feature-card:nth-child(5) {
+    grid-column: 4 / span 2;
+}
+
+.feature-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--light-green);
+    box-shadow: 0 12px 28px rgb(38 50 56 / 8%);
+}
+
+.feature-card__icon {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    color: var(--dark-green);
+    background-color: var(--light-green);
+    border-radius: 10px;
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.feature-card h3 {
+    margin-bottom: 12px;
+    color: var(--charcoal);
+    font-size: 1.125rem;
+    line-height: 1.35;
+}
+
+.feature-card p {
+    color: var(--slate-600);
+    font-size: 0.9375rem;
+    line-height: 1.65;
+}
+
+@media (max-width: 1024px) {
+    .features {
+        padding: 80px 0;
+    }
+
+    .features__grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .feature-card,
+    .feature-card:nth-child(4),
+    .feature-card:nth-child(5) {
+        grid-column: auto;
+    }
+
+    .feature-card:last-child {
+        grid-column: 1 / -1;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .features {
+        padding: 64px 0;
+    }
+
+    .features__header {
+        margin-bottom: 32px;
+    }
+
+    .features__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .feature-card,
+    .feature-card:last-child {
+        grid-column: auto;
+        min-height: auto;
+        padding: 24px 20px;
+    }
+
+    .feature-card__icon {
+        margin-bottom: 20px;
+    }
+}
