@@ -138,3 +138,4 @@ if ("IntersectionObserver" in window) {
         element.classList.add("is-visible");
     });
 }
+
