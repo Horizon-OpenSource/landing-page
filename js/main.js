@@ -107,6 +107,12 @@ window.addEventListener("resize", updateActiveNavigation);
 
 updateActiveNavigation();
 
+const contactForm = document.querySelector(".contact-form");
+
+contactForm?.addEventListener("submit", (event) => {
+    event.preventDefault();
+});
+
 const revealElements = document.querySelectorAll(
     ".problem-benefits__problem, .benefit-card, " +
     ".segments__header, .segment-card, " +
