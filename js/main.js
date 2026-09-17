@@ -113,7 +113,9 @@ const revealElements = document.querySelectorAll(
     ".features__header, .feature-card, " +
     ".scopes__header, .scope-card, " +
     ".how-it-works__header, .process-step, " +
-    ".standards__header, .standard-card"
+    ".standards__header, .standard-card, " +
+    ".plans__header, .plan-card, " +
+    ".final-cta__content"
 );
 
 if ("IntersectionObserver" in window) {
@@ -138,3 +140,4 @@ if ("IntersectionObserver" in window) {
         element.classList.add("is-visible");
     });
 }
+
