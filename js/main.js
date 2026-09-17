@@ -112,7 +112,8 @@ const revealElements = document.querySelectorAll(
     ".segments__header, .segment-card, " +
     ".features__header, .feature-card, " +
     ".scopes__header, .scope-card, " +
-    ".how-it-works__header, .process-step"
+    ".how-it-works__header, .process-step, " +
+    ".standards__header, .standard-card"
 );
 
 if ("IntersectionObserver" in window) {
