@@ -115,7 +115,9 @@ const revealElements = document.querySelectorAll(
     ".how-it-works__header, .process-step, " +
     ".standards__header, .standard-card, " +
     ".plans__header, .plan-card, " +
-    ".final-cta__content"
+    ".final-cta__content"+
+    ".contact__content, .contact-form, " +
+    ".about_content, .about_team-header, .team-member"
 );
 
 if ("IntersectionObserver" in window) {
