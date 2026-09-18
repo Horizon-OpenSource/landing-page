@@ -1,7 +1,6 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="css/final-cta.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="EcoTrack is a B2B SaaS platform developed by Horizon to help organizations register, calculate, analyze and manage greenhouse gas emissions and their corporate carbon footprint.">
@@ -22,58 +21,57 @@
     <link rel="stylesheet" href="css/scopes.css">
     <link rel="stylesheet" href="css/how-it-works.css">
     <link rel="stylesheet" href="css/standards.css">
-    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/plans.css">
-    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/final-cta.css">
     <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
     <link rel="stylesheet" href="css/footer.css">
 </head>
+
 <body>
 
 <header class="site-header">
     <div class="container navbar">
 
-        <a class="navbar__brand" href="#home" aria-label="EcoTrack home">
+        <a class="navbar__brand" href="#home" aria-label="EcoTrack home" data-i18n-aria-label="a11y.home">
             <img class="navbar__logo" src="assets/images/ecotrack-logo.png" alt="EcoTrack">
         </a>
 
-        <nav id="primary-navigation" class="navbar__navigation" aria-label="Primary navigation">
+        <nav id="primary-navigation" class="navbar__navigation" aria-label="Primary navigation" data-i18n-aria-label="a11y.primaryNavigation">
             <ul class="navbar__links">
                 <li>
-                    <a class="navbar__link navbar__link--active" href="#home">Home</a>
+                    <a class="navbar__link navbar__link--active" href="#home" data-i18n="nav.home">Home</a>
                 </li>
                 <li>
-                    <a class="navbar__link" href="#features">Features</a>
+                    <a class="navbar__link" href="#features" data-i18n="nav.features">Features</a>
                 </li>
                 <li>
-                    <a class="navbar__link" href="#how-it-works">How It Works</a>
+                    <a class="navbar__link" href="#how-it-works" data-i18n="nav.howItWorks">How It Works</a>
                 </li>
                 <li>
-                    <a class="navbar__link" href="#standards">
-                        Standards
-                    </a>
+                    <a class="navbar__link" href="#standards" data-i18n="nav.standards">Standards</a>
                 </li>
                 <li>
-                    <a class="navbar__link" href="#plans">Plans</a>
+                    <a class="navbar__link" href="#plans" data-i18n="nav.plans">Plans</a>
                 </li>
                 <li>
-                    <a class="navbar__link" href="#contact">Contact</a>
+                    <a class="navbar__link" href="#contact" data-i18n="nav.contact">Contact</a>
                 </li>
             </ul>
         </nav>
 
         <div class="navbar__actions">
-            <button class="language-selector" type="button" aria-label="Change language">
+            <button class="language-selector" type="button" aria-label="Change language" data-language-toggle>
                 EN / ES
             </button>
 
-            <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="primary-navigation">
+            <button class="navbar__menu-toggle" type="button" aria-label="Open navigation menu" data-i18n-aria-label="a11y.openNavigation" aria-expanded="false" aria-controls="primary-navigation">
                 <span class="navbar__menu-line"></span>
                 <span class="navbar__menu-line"></span>
                 <span class="navbar__menu-line"></span>
             </button>
 
-            <a class="button button--primary navbar__cta" href="#contact">
+            <a class="button button--primary navbar__cta" href="#contact" data-i18n="nav.getStarted">
                 Get Started
             </a>
         </div>
@@ -89,72 +87,67 @@
 
             <div class="hero__content">
 
-                <p class="hero__eyebrow">
+                <p class="hero__eyebrow" data-i18n="hero.eyebrow">
                     CARBON FOOTPRINT MANAGEMENT FOR BUSINESS
                 </p>
 
-                <h1 class="hero__title">
+                <h1 class="hero__title" data-i18n="hero.title">
                     Turn Emissions Data into Clear Environmental Decisions
                 </h1>
 
-                <p class="hero__description">
+                <p class="hero__description" data-i18n="hero.description">
                     Centralize emissions data, calculate your carbon footprint, track environmental performance and turn results into measurable reduction goals — all in one platform.
                 </p>
 
                 <div class="hero__actions">
-                    <a class="button button--primary" href="#contact">
+                    <a class="button button--primary" href="#contact" data-i18n="hero.primaryCta">
                         Get Started
                     </a>
-                    <a class="button button--secondary" href="#features">
+
+                    <a class="button button--secondary" href="#features" data-i18n="hero.secondaryCta">
                         Explore EcoTrack
                     </a>
                 </div>
 
             </div>
 
-            <div
-                    class="hero__visual"
-                    aria-label="Illustrative EcoTrack emissions dashboard preview using sample data"
-            >
+            <div class="hero__visual"
+                 aria-label="Illustrative EcoTrack emissions dashboard preview using sample data"
+                 data-i18n-aria-label="a11y.dashboardPreview">
 
                 <div class="dashboard-preview">
 
                     <div class="dashboard-preview__header">
                         <div>
-                            <span class="dashboard-preview__brand">
-                                EcoTrack
-                            </span>
-
-                            <p>Emissions Dashboard</p>
+                            <span class="dashboard-preview__brand">EcoTrack</span>
+                            <p data-i18n="dashboard.title">Emissions Dashboard</p>
                         </div>
 
-                        <span class="dashboard-preview__period">
-                            2026
-                        </span>
+                        <span class="dashboard-preview__period">2026</span>
                     </div>
 
                     <div class="dashboard-preview__metrics">
 
                         <article class="dashboard-metric">
-                            <span>Total Emissions</span>
+                            <span data-i18n="dashboard.totalEmissions">Total Emissions</span>
                             <strong>4,820</strong>
                             <small>tCO₂e</small>
                         </article>
 
                         <article class="dashboard-metric">
-                            <span>Scope 1</span>
+                            <span data-i18n="dashboard.scope1">Scope 1</span>
                             <strong>1,230</strong>
                             <small>tCO₂e</small>
                         </article>
 
                         <article class="dashboard-metric">
-                            <span>Scope 2</span>
+                            <span data-i18n="dashboard.scope2">Scope 2</span>
                             <strong>2,190</strong>
                             <small>tCO₂e</small>
                         </article>
 
                         <article class="dashboard-metric">
-                            <span>Scope 3</span>
+                            <span data-i18n="dashboard.scope3">Scope 3</span>
                             <strong>1,400</strong>
                             <small>tCO₂e</small>
                         </article>
@@ -165,8 +158,8 @@
 
                         <div class="dashboard-chart">
                             <div class="dashboard-chart__header">
-                                <span>Emission Trend</span>
-                                <small>Last 6 months</small>
+                                <span data-i18n="dashboard.emissionTrend">Emission Trend</span>
+                                <small data-i18n="dashboard.lastSixMonths">Last 6 months</small>
                             </div>
 
                             <div class="dashboard-chart__bars" aria-hidden="true">
@@ -180,15 +173,14 @@
                         </div>
 
                         <div class="dashboard-goal">
-                            <span>Reduction Goal</span>
-
+                            <span data-i18n="dashboard.reductionGoal">Reduction Goal</span>
                             <strong>68%</strong>
 
                             <div class="dashboard-goal__track">
                                 <span></span>
                             </div>
 
-                            <small>Annual target progress</small>
+                            <small data-i18n="dashboard.annualProgress">Annual target progress</small>
                         </div>
 
                     </div>
@@ -205,13 +197,13 @@
         <div class="container problem-benefits__container">
 
             <div class="problem-benefits__problem">
-                <p class="section-eyebrow">THE CHALLENGE</p>
+                <p class="section-eyebrow" data-i18n="problem.eyebrow">THE CHALLENGE</p>
 
-                <h2 class="section-title">
+                <h2 class="section-title" data-i18n="problem.title">
                     Your Environmental Data Shouldn't Be Scattered Across Different Tools
                 </h2>
 
-                <p class="problem-benefits__description">
+                <p class="problem-benefits__description" data-i18n="problem.description">
                     Spreadsheets, documents and disconnected systems make environmental information harder to consolidate, update and analyze. EcoTrack brings your emissions data and carbon footprint management into one structured environment.
                 </p>
             </div>
@@ -220,8 +212,8 @@
                 <article class="benefit-card">
                     <div class="benefit-card__icon" aria-hidden="true">01</div>
                     <div>
-                        <h3>Centralize Environmental Data</h3>
-                        <p>
+                        <h3 data-i18n="problem.card1Title">Centralize Environmental Data</h3>
+                        <p data-i18n="problem.card1Text">
                             Bring emissions information from different areas, activities and locations into one organized platform.
                         </p>
                     </div>
@@ -230,8 +222,8 @@
                 <article class="benefit-card">
                     <div class="benefit-card__icon" aria-hidden="true">02</div>
                     <div>
-                        <h3>Reduce Manual Work</h3>
-                        <p>
+                        <h3 data-i18n="problem.card2Title">Reduce Manual Work</h3>
+                        <p data-i18n="problem.card2Text">
                             Use registered activity data and emission factors to calculate carbon footprint results with less dependence on manual calculations.
                         </p>
                     </div>
@@ -240,51 +232,71 @@
                 <article class="benefit-card">
                     <div class="benefit-card__icon" aria-hidden="true">03</div>
                     <div>
-                        <h3>Make Information Easier to Understand</h3>
-                        <p>
+                        <h3 data-i18n="problem.card3Title">Make Information Easier to Understand</h3>
+                        <p data-i18n="problem.card3Text">
                             Turn emissions data into indicators, comparisons and reports that help your team understand environmental performance.
                         </p>
                     </div>
                 </article>
-
             </div>
+
         </div>
     </section>
 
     <!-- ===== TARGET SEGMENTS START ===== -->
     <section id="segments" class="segments">
         <div class="container">
+
             <div class="segments__header">
-                <p class="section-eyebrow">WHO ECOTRACK IS FOR</p>
-                <h2 class="section-title">Built for Companies That Need Better Control of Their Environmental Information</h2>
-                <p class="segments__intro">
+                <p class="section-eyebrow" data-i18n="segments.eyebrow">WHO ECOTRACK IS FOR</p>
+
+                <h2 class="section-title" data-i18n="segments.title">
+                    Built for Companies That Need Better Control of Their Environmental Information
+                </h2>
+
+                <p class="segments__intro" data-i18n="segments.description">
                     EcoTrack supports organizations that need to measure emissions, organize environmental data and turn that information into useful insights for sustainability management.
                 </p>
             </div>
 
             <div class="segments__grid">
+
                 <article class="segment-card">
                     <div class="segment-card__number" aria-hidden="true">01</div>
+
                     <div class="segment-card__content">
-                        <h3>Exporting Companies</h3>
-                        <p>
+                        <h3 data-i18n="segments.exportingTitle">Exporting Companies</h3>
+
+                        <p data-i18n="segments.exportingText">
                             For companies in agriculture, textile, mining and other productive sectors that need better control of emissions information for sustainability, reporting, audit and certification processes.
                         </p>
-                        <span>Sustainability · Reporting · Environmental Management</span>
+
+                        <span data-i18n="segments.exportingSmall">
+                            Sustainability · Reporting · Environmental Management
+                        </span>
                     </div>
                 </article>
 
                 <article class="segment-card">
                     <div class="segment-card__number" aria-hidden="true">02</div>
+
                     <div class="segment-card__content">
-                        <h3>Corporations & Medium-Sized Industrial Companies</h3>
-                        <p>
+                        <h3 data-i18n="segments.corporationsTitle">
+                            Corporations &amp; Medium-Sized Industrial Companies
+                        </h3>
+
+                        <p data-i18n="segments.corporationsText">
                             For organizations managing environmental information across multiple areas, processes or locations that need a clearer view of their emissions and environmental performance.
                         </p>
-                        <span>Operations · Multiple Locations · Environmental Monitoring</span>
+
+                        <span data-i18n="segments.corporationsSmall">
+                            Operations · Multiple Locations · Environmental Monitoring
+                        </span>
                     </div>
                 </article>
+
             </div>
+
         </div>
     </section>
     <!-- ===== TARGET SEGMENTS END ===== -->
@@ -292,45 +304,63 @@
     <!-- ===== FEATURES START ===== -->
     <section id="features" class="features">
         <div class="container">
+
             <div class="features__header">
-                <p class="section-eyebrow">CORE CAPABILITIES</p>
-                <h2 class="section-title">Everything You Need to Manage Your Carbon Footprint</h2>
-                <p class="features__intro">
+                <p class="section-eyebrow" data-i18n="features.eyebrow">CORE CAPABILITIES</p>
+
+                <h2 class="section-title" data-i18n="features.title">
+                    Everything You Need to Manage Your Carbon Footprint
+                </h2>
+
+                <p class="features__intro" data-i18n="features.description">
                     EcoTrack connects the essential processes your organization needs to register emissions, calculate results, understand performance and follow environmental objectives.
                 </p>
             </div>
 
             <div class="features__grid">
+
                 <article class="feature-card">
                     <div class="feature-card__icon" aria-hidden="true">01</div>
-                    <h3>Centralize Your Emissions Data</h3>
-                    <p>Register, classify and maintain emissions information across Scope 1, Scope 2 and Scope 3 in a structured history.</p>
+                    <h3 data-i18n="features.card1Title">Centralize Your Emissions Data</h3>
+                    <p data-i18n="features.card1Text">
+                        Register, classify and maintain emissions information across Scope 1, Scope 2 and Scope 3 in a structured history.
+                    </p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-card__icon" aria-hidden="true">02</div>
-                    <h3>Calculate Your Carbon Footprint</h3>
-                    <p>Use activity data and emission factors to obtain carbon footprint results by scope and reporting period.</p>
+                    <h3 data-i18n="features.card2Title">Calculate Your Carbon Footprint</h3>
+                    <p data-i18n="features.card2Text">
+                        Use activity data and emission factors to obtain carbon footprint results by scope and reporting period.
+                    </p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-card__icon" aria-hidden="true">03</div>
-                    <h3>Turn Results into Reduction Goals</h3>
-                    <p>Define environmental goals, create reduction plans, register initiatives and monitor progress over time.</p>
+                    <h3 data-i18n="features.card3Title">Turn Results into Reduction Goals</h3>
+                    <p data-i18n="features.card3Text">
+                        Define environmental goals, create reduction plans, register initiatives and monitor progress over time.
+                    </p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-card__icon" aria-hidden="true">04</div>
-                    <h3>Understand Your Environmental Performance</h3>
-                    <p>Use dashboards, indicators and period comparisons to identify trends and your organization's main emission sources.</p>
+                    <h3 data-i18n="features.card4Title">Understand Your Environmental Performance</h3>
+                    <p data-i18n="features.card4Text">
+                        Use dashboards, indicators and period comparisons to identify trends and your organization's main emission sources.
+                    </p>
                 </article>
 
                 <article class="feature-card">
                     <div class="feature-card__icon" aria-hidden="true">05</div>
-                    <h3>Keep Your Organization Connected</h3>
-                    <p>Manage users, locations and organizational information within the same environmental management environment.</p>
+                    <h3 data-i18n="features.card5Title">Keep Your Organization Connected</h3>
+                    <p data-i18n="features.card5Text">
+                        Manage users, locations and organizational information within the same environmental management environment.
+                    </p>
                 </article>
+
             </div>
+
         </div>
     </section>
     <!-- ===== FEATURES END ===== -->
@@ -338,36 +368,44 @@
     <!-- ===== EMISSION SCOPES START ===== -->
     <section id="emission-scopes" class="scopes">
         <div class="container">
+
             <div class="scopes__header">
-                <p class="section-eyebrow">EMISSION SCOPES</p>
-                <h2 class="section-title">Understand Where Your Emissions Come From</h2>
-                <p class="scopes__intro">
+                <p class="section-eyebrow" data-i18n="scopes.eyebrow">EMISSION SCOPES</p>
+
+                <h2 class="section-title" data-i18n="scopes.title">
+                    Understand Where Your Emissions Come From
+                </h2>
+
+                <p class="scopes__intro" data-i18n="scopes.description">
                     EcoTrack organizes greenhouse gas information across Scope 1, Scope 2 and Scope 3, helping your organization understand the different sources behind its carbon footprint.
                 </p>
             </div>
 
             <div class="scopes__grid">
+
                 <article class="scope-card">
-                    <div class="scope-card__label">SCOPE 1</div>
-                    <h3>Direct Emissions</h3>
-                    <p>Emissions generated directly by sources owned or controlled by your organization.</p>
-                    <span>Owned or controlled sources</span>
+                    <div class="scope-card__label" data-i18n="scopes.scope1Label">SCOPE 1</div>
+                    <h3 data-i18n="scopes.scope1Title">Direct Emissions</h3>
+                    <p data-i18n="scopes.scope1Text">Emissions generated directly by sources owned or controlled by your organization.</p>
+                    <span data-i18n="scopes.scope1Small">Owned or controlled sources</span>
                 </article>
 
                 <article class="scope-card">
-                    <div class="scope-card__label">SCOPE 2</div>
-                    <h3>Indirect Energy Emissions</h3>
-                    <p>Indirect emissions associated with electricity and other forms of energy acquired by your organization.</p>
-                    <span>Purchased energy</span>
+                    <div class="scope-card__label" data-i18n="scopes.scope2Label">SCOPE 2</div>
+                    <h3 data-i18n="scopes.scope2Title">Indirect Energy Emissions</h3>
+                    <p data-i18n="scopes.scope2Text">Indirect emissions associated with electricity and other forms of energy acquired by your organization.</p>
+                    <span data-i18n="scopes.scope2Small">Purchased energy</span>
                 </article>
 
                 <article class="scope-card">
-                    <div class="scope-card__label">SCOPE 3</div>
-                    <h3>Other Indirect Emissions</h3>
-                    <p>Other indirect emissions generated through activities across your organization's value chain.</p>
-                    <span>Value chain activities</span>
+                    <div class="scope-card__label" data-i18n="scopes.scope3Label">SCOPE 3</div>
+                    <h3 data-i18n="scopes.scope3Title">Other Indirect Emissions</h3>
+                    <p data-i18n="scopes.scope3Text">Other indirect emissions generated through activities across your organization's value chain.</p>
+                    <span data-i18n="scopes.scope3Small">Value chain activities</span>
                 </article>
+
             </div>
+
         </div>
     </section>
     <!-- ===== EMISSION SCOPES END ===== -->
@@ -375,96 +413,135 @@
     <!-- ===== HOW IT WORKS START ===== -->
     <section id="how-it-works" class="how-it-works">
         <div class="container">
+
             <div class="how-it-works__header">
-                <p class="section-eyebrow">HOW IT WORKS</p>
-                <h2 class="section-title">From Environmental Data to Action in Five Steps</h2>
-                <p class="how-it-works__intro">
+                <p class="section-eyebrow" data-i18n="process.eyebrow">HOW IT WORKS</p>
+
+                <h2 class="section-title" data-i18n="process.title">
+                    From Environmental Data to Action in Five Steps
+                </h2>
+
+                <p class="how-it-works__intro" data-i18n="process.description">
                     EcoTrack connects the main stages of carbon footprint management in a simple and structured workflow.
                 </p>
             </div>
 
             <div class="how-it-works__steps">
+
                 <article class="process-step">
                     <div class="process-step__number">01</div>
-                    <h3>Register Emissions Data</h3>
-                    <p>Record the activities, consumption and sources related to your organization's emissions.</p>
+                    <h3 data-i18n="process.step1Title">Register Emissions Data</h3>
+                    <p data-i18n="process.step1Text">
+                        Record the activities, consumption and sources related to your organization's emissions.
+                    </p>
                 </article>
 
                 <article class="process-step">
                     <div class="process-step__number">02</div>
-                    <h3>Calculate Your Carbon Footprint</h3>
-                    <p>EcoTrack uses registered activity data and emission factors to calculate greenhouse gas emissions.</p>
+                    <h3 data-i18n="process.step2Title">Calculate Your Carbon Footprint</h3>
+                    <p data-i18n="process.step2Text">
+                        EcoTrack uses registered activity data and emission factors to calculate greenhouse gas emissions.
+                    </p>
                 </article>
 
                 <article class="process-step">
                     <div class="process-step__number">03</div>
-                    <h3>Understand Your Results</h3>
-                    <p>Review emissions by scope, indicators, trends and comparisons between reporting periods.</p>
+                    <h3 data-i18n="process.step3Title">Understand Your Results</h3>
+                    <p data-i18n="process.step3Text">
+                        Review emissions by scope, indicators, trends and comparisons between reporting periods.
+                    </p>
                 </article>
 
                 <article class="process-step">
                     <div class="process-step__number">04</div>
-                    <h3>Plan Your Reduction Efforts</h3>
-                    <p>Create environmental goals and reduction plans and follow the progress of your initiatives.</p>
+                    <h3 data-i18n="process.step4Title">Plan Your Reduction Efforts</h3>
+                    <p data-i18n="process.step4Text">
+                        Create environmental goals and reduction plans and follow the progress of your initiatives.
+                    </p>
                 </article>
 
                 <article class="process-step">
                     <div class="process-step__number">05</div>
-                    <h3>Generate Environmental Reports</h3>
-                    <p>Turn your environmental information and carbon footprint results into structured reports for analysis and communication.</p>
+                    <h3 data-i18n="process.step5Title">Generate Environmental Reports</h3>
+                    <p data-i18n="process.step5Text">
+                        Turn your environmental information and carbon footprint results into structured reports for analysis and communication.
+                    </p>
                 </article>
+
             </div>
+
         </div>
     </section>
     <!-- ===== HOW IT WORKS END ===== -->
+
     <!-- ===== STANDARDS START ===== -->
     <section id="standards" class="standards">
         <div class="container">
+
             <div class="standards__header">
-                <p class="section-eyebrow">RECOGNIZED FRAMEWORKS</p>
-                <h2 class="section-title">Manage Emissions with International Standards in Mind</h2>
-                <p class="standards__intro">
+                <p class="section-eyebrow" data-i18n="standards.eyebrow">RECOGNIZED FRAMEWORKS</p>
+
+                <h2 class="section-title" data-i18n="standards.title">
+                    Manage Emissions with International Standards in Mind
+                </h2>
+
+                <p class="standards__intro" data-i18n="standards.description">
                     EcoTrack considers recognized frameworks for greenhouse gas accounting and reporting to help organizations structure their environmental information more clearly.
                 </p>
             </div>
 
             <div class="standards__grid">
+
                 <article class="standard-card">
                     <div class="standard-card__badge" aria-hidden="true">GHG</div>
+
                     <div class="standard-card__content">
-                        <h3>GHG Protocol</h3>
-                        <p>
+                        <h3 data-i18n="standards.ghgTitle">GHG Protocol</h3>
+
+                        <p data-i18n="standards.ghgText">
                             EcoTrack uses the GHG Protocol as a reference for organizing corporate greenhouse gas emissions across Scope 1, Scope 2 and Scope 3.
                         </p>
-                        <span>Greenhouse gas accounting framework</span>
+
+                        <span data-i18n="standards.ghgSmall">Greenhouse gas accounting framework</span>
                     </div>
                 </article>
 
                 <article class="standard-card">
                     <div class="standard-card__badge" aria-hidden="true">ISO</div>
+
                     <div class="standard-card__content">
-                        <h3>ISO 14064</h3>
-                        <p>
+                        <h3 data-i18n="standards.isoTitle">ISO 14064</h3>
+
+                        <p data-i18n="standards.isoText">
                             EcoTrack considers ISO 14064 as a reference for the quantification and reporting of greenhouse gas emissions at the organizational level.
                         </p>
-                        <span>Organizational GHG information reference</span>
+
+                        <span data-i18n="standards.isoSmall">Organizational GHG information reference</span>
                     </div>
                 </article>
+
             </div>
 
-            <p class="standards__note">
+            <p class="standards__note" data-i18n="standards.note">
                 These frameworks are used as references within EcoTrack and do not represent certifications or accreditations of the platform.
             </p>
+
         </div>
     </section>
     <!-- ===== STANDARDS END ===== -->
+
     <!-- ===== PLANS START ===== -->
     <section id="plans" class="plans">
         <div class="container">
+
             <div class="plans__header">
-                <p class="section-eyebrow">PLANS</p>
-                <h2 class="section-title">Choose the Level of Environmental Management Your Organization Needs</h2>
-                <p class="plans__intro">
+                <p class="section-eyebrow" data-i18n="plans.eyebrow">PLANS</p>
+
+                <h2 class="section-title" data-i18n="plans.title">
+                    Choose the Level of Environmental Management Your Organization Needs
+                </h2>
+
+                <p class="plans__intro" data-i18n="plans.description">
                     Start with essential carbon footprint management and scale toward advanced analytics, multiple locations and automated data integration as your organization grows.
                 </p>
             </div>
@@ -473,83 +550,102 @@
 
                 <article class="plan-card">
                     <div class="plan-card__header">
-                        <h3>Basic</h3>
-                        <p class="plan-card__price">S/ 199 <span>/ month</span></p>
-                        <p class="plan-card__description">
+                        <h3 data-i18n="plans.basic.name">Basic</h3>
+
+                        <p class="plan-card__price" data-i18n-html="plans.basic.price">
+                            S/ 199 <span>/ month</span>
+                        </p>
+
+                        <p class="plan-card__description" data-i18n="plans.basic.description">
                             Start measuring and organizing your company's carbon footprint.
                         </p>
                     </div>
 
                     <ul class="plan-card__features">
-                        <li>Up to 3 users</li>
-                        <li>1 location</li>
-                        <li>Scope 1 and Scope 2</li>
-                        <li>Manual emissions registration</li>
-                        <li>Automatic carbon footprint calculation</li>
-                        <li>Basic dashboard</li>
-                        <li>Emissions history</li>
-                        <li>Basic PDF reports</li>
-                        <li>Email support</li>
+                        <li data-i18n="plans.basic.feature1">Up to 3 users</li>
+                        <li data-i18n="plans.basic.feature2">1 location</li>
+                        <li data-i18n="plans.basic.feature3">Scope 1 and Scope 2</li>
+                        <li data-i18n="plans.basic.feature4">Manual emissions registration</li>
+                        <li data-i18n="plans.basic.feature5">Automatic carbon footprint calculation</li>
+                        <li data-i18n="plans.basic.feature6">Basic dashboard</li>
+                        <li data-i18n="plans.basic.feature7">Emissions history</li>
+                        <li data-i18n="plans.basic.feature8">Basic PDF reports</li>
+                        <li data-i18n="plans.basic.feature9">Email support</li>
                     </ul>
 
-                    <a class="button button--outline plan-card__cta" href="#contact">Get Started</a>
+                    <a class="button button--outline plan-card__cta" href="#contact" data-i18n="plans.basic.cta">
+                        Get Started
+                    </a>
                 </article>
 
                 <article class="plan-card plan-card--recommended">
-                    <span class="plan-card__badge">RECOMMENDED</span>
+                    <span class="plan-card__badge" data-i18n="plans.pro.badge">RECOMMENDED</span>
 
                     <div class="plan-card__header">
-                        <h3>Pro</h3>
-                        <p class="plan-card__price">S/ 499 <span>/ month</span></p>
-                        <p class="plan-card__description">
+                        <h3 data-i18n="plans.pro.name">Pro</h3>
+
+                        <p class="plan-card__price" data-i18n-html="plans.pro.price">
+                            S/ 499 <span>/ month</span>
+                        </p>
+
+                        <p class="plan-card__description" data-i18n="plans.pro.description">
                             Go beyond measurement with deeper analysis, goals and reduction planning.
                         </p>
                     </div>
 
                     <ul class="plan-card__features">
-                        <li>Up to 10 users</li>
-                        <li>Up to 3 locations</li>
-                        <li>Scope 1, Scope 2 and Scope 3</li>
-                        <li>Advanced dashboard</li>
-                        <li>Period comparison</li>
-                        <li>Environmental goals</li>
-                        <li>Reduction plans</li>
-                        <li>Advanced indicators</li>
-                        <li>Customizable reports</li>
-                        <li>Data export</li>
-                        <li>Priority support</li>
+                        <li data-i18n="plans.pro.feature1">Up to 10 users</li>
+                        <li data-i18n="plans.pro.feature2">Up to 3 locations</li>
+                        <li data-i18n="plans.pro.feature3">Scope 1, Scope 2 and Scope 3</li>
+                        <li data-i18n="plans.pro.feature4">Advanced dashboard</li>
+                        <li data-i18n="plans.pro.feature5">Period comparison</li>
+                        <li data-i18n="plans.pro.feature6">Environmental goals</li>
+                        <li data-i18n="plans.pro.feature7">Reduction plans</li>
+                        <li data-i18n="plans.pro.feature8">Advanced indicators</li>
+                        <li data-i18n="plans.pro.feature9">Customizable reports</li>
+                        <li data-i18n="plans.pro.feature10">Data export</li>
+                        <li data-i18n="plans.pro.feature11">Priority support</li>
                     </ul>
 
-                    <a class="button button--primary plan-card__cta" href="#contact">Choose Pro</a>
+                    <a class="button button--primary plan-card__cta" href="#contact" data-i18n="plans.pro.cta">
+                        Choose Pro
+                    </a>
                 </article>
 
                 <article class="plan-card">
                     <div class="plan-card__header">
-                        <h3>Enterprise</h3>
-                        <p class="plan-card__price">From S/ 1,200 <span>/ month</span></p>
-                        <p class="plan-card__description">
+                        <h3 data-i18n="plans.enterprise.name">Enterprise</h3>
+
+                        <p class="plan-card__price" data-i18n-html="plans.enterprise.price">
+                            From S/ 1,200 <span>/ month</span>
+                        </p>
+
+                        <p class="plan-card__description" data-i18n="plans.enterprise.description">
                             Scale environmental management across multiple locations and business operations.
                         </p>
                     </div>
 
                     <ul class="plan-card__features">
-                        <li>From 25 users</li>
-                        <li>From 10 locations</li>
-                        <li>Everything in Pro</li>
-                        <li>Executive dashboards</li>
-                        <li>Multi-location data consolidation</li>
-                        <li>Advanced roles and permissions</li>
-                        <li>Advanced reports</li>
-                        <li>CSV data import</li>
-                        <li>EcoTrack API access</li>
-                        <li>Automated data registration from external systems</li>
-                        <li>Enterprise support</li>
+                        <li data-i18n="plans.enterprise.feature1">From 25 users</li>
+                        <li data-i18n="plans.enterprise.feature2">From 10 locations</li>
+                        <li data-i18n="plans.enterprise.feature3">Everything in Pro</li>
+                        <li data-i18n="plans.enterprise.feature4">Executive dashboards</li>
+                        <li data-i18n="plans.enterprise.feature5">Multi-location data consolidation</li>
+                        <li data-i18n="plans.enterprise.feature6">Advanced roles and permissions</li>
+                        <li data-i18n="plans.enterprise.feature7">Advanced reports</li>
+                        <li data-i18n="plans.enterprise.feature8">CSV data import</li>
+                        <li data-i18n="plans.enterprise.feature9">EcoTrack API access</li>
+                        <li data-i18n="plans.enterprise.feature10">Automated data registration from external systems</li>
+                        <li data-i18n="plans.enterprise.feature11">Enterprise support</li>
                     </ul>
 
-                    <a class="button button--outline plan-card__cta" href="#contact">Contact Us</a>
+                    <a class="button button--outline plan-card__cta" href="#contact" data-i18n="plans.enterprise.cta">
+                        Contact Us
+                    </a>
                 </article>
 
             </div>
+
         </div>
     </section>
     <!-- ===== PLANS END ===== -->
@@ -557,18 +653,31 @@
     <!-- ===== FINAL CTA START ===== -->
     <section class="final-cta">
         <div class="container">
+
             <div class="final-cta__content">
-                <p class="section-eyebrow">START MANAGING YOUR ENVIRONMENTAL DATA</p>
-                <h2>Turn Environmental Information into Better Decisions</h2>
-                <p>
+                <p class="section-eyebrow" data-i18n="finalCta.eyebrow">
+                    START MANAGING YOUR ENVIRONMENTAL DATA
+                </p>
+
+                <h2 data-i18n="finalCta.title">
+                    Turn Environmental Information into Better Decisions
+                </h2>
+
+                <p data-i18n="finalCta.description">
                     Bring your emissions data, carbon footprint results and environmental goals into one platform and build a clearer view of your organization's environmental performance.
                 </p>
 
                 <div class="final-cta__actions">
-                    <a class="button button--primary" href="#contact">Get Started</a>
-                    <a class="button final-cta__secondary" href="#plans">View Plans</a>
+                    <a class="button button--primary" href="#contact" data-i18n="finalCta.primary">
+                        Get Started
+                    </a>
+
+                    <a class="button final-cta__secondary" href="#plans" data-i18n="finalCta.secondary">
+                        View Plans
+                    </a>
                 </div>
             </div>
+
         </div>
     </section>
     <!-- ===== FINAL CTA END ===== -->
@@ -578,91 +687,183 @@
         <div class="container contact__layout">
 
             <div class="contact__content">
-                <p class="section-eyebrow">CONTACT</p>
-                <h2 class="section-title">Let's Talk About Your Environmental Management Needs</h2>
+                <p class="section-eyebrow" data-i18n="contact.eyebrow">CONTACT</p>
 
-                <p class="contact__intro">
+                <h2 class="section-title" data-i18n="contact.title">
+                    Let's Talk About Your Environmental Management Needs
+                </h2>
+
+                <p class="contact__intro" data-i18n="contact.description">
                     Tell us about your organization and how you currently manage emissions information. We can help you explore how EcoTrack could fit your environmental management process.
                 </p>
 
                 <div class="contact__benefits">
-                    <p>Explore the EcoTrack plan that fits your organization.</p>
-                    <p>Understand how emissions management can be centralized.</p>
-                    <p>Learn how EcoTrack supports different levels of environmental management.</p>
+                    <p data-i18n="contact.benefit1">Explore the EcoTrack plan that fits your organization.</p>
+                    <p data-i18n="contact.benefit2">Understand how emissions management can be centralized.</p>
+                    <p data-i18n="contact.benefit3">Learn how EcoTrack supports different levels of environmental management.</p>
                 </div>
             </div>
 
             <form class="contact-form">
+
                 <div class="contact-form__group">
-                    <label for="company-name">Company Name</label>
+                    <label for="company-name" data-i18n="contact.companyName">Company Name</label>
                     <input id="company-name" name="companyName" type="text" autocomplete="organization" required>
                 </div>
 
                 <div class="contact-form__group">
-                    <label for="corporate-email">Corporate Email</label>
+                    <label for="corporate-email" data-i18n="contact.email">Corporate Email</label>
                     <input id="corporate-email" name="corporateEmail" type="email" autocomplete="email" required>
                 </div>
 
                 <div class="contact-form__row">
+
                     <div class="contact-form__group">
-                        <label for="sector">Sector</label>
+                        <label for="sector" data-i18n="contact.sector">Sector</label>
                         <input id="sector" name="sector" type="text" required>
                     </div>
 
                     <div class="contact-form__group">
-                        <label for="phone">Phone <span>(Optional)</span></label>
+                        <label for="phone" data-i18n-html="contact.phone">Phone <span>(Optional)</span></label>
                         <input id="phone" name="phone" type="tel" autocomplete="tel">
                     </div>
+
                 </div>
 
                 <div class="contact-form__group">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" rows="5" placeholder="Tell us briefly about your environmental management needs." required></textarea>
+                    <label for="message" data-i18n="contact.message">Message</label>
+
+                    <textarea id="message"
+                              name="message"
+                              rows="5"
+                              placeholder="Tell us briefly about your environmental management needs."
+                              data-i18n-placeholder="contact.messagePlaceholder"
+                              required></textarea>
                 </div>
 
                 <label class="contact-form__consent">
                     <input name="consent" type="checkbox" required>
-                    <span>I agree to be contacted regarding my request.</span>
+                    <span data-i18n="contact.consent">I agree to be contacted regarding my request.</span>
                 </label>
 
-                <button class="button button--primary contact-form__submit" type="submit">Send Request</button>
+                <button class="button button--primary contact-form__submit" type="submit" data-i18n="contact.submit">
+                    Send Request
+                </button>
+
             </form>
 
         </div>
     </section>
     <!-- ===== CONTACT END ===== -->
-</main>
-<!-- ===== FOOTER START ===== -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer__top">
-            <div class="footer__brand">
-                <a class="footer__logo" href="#home" aria-label="EcoTrack home">
-                    <img src="assets/images/ecotrack-logo.png" alt="EcoTrack">
-                </a>
 
-                <p>Carbon footprint management for modern organizations.</p>
+    <!-- ===== ABOUT HORIZON START ===== -->
+    <section id="about-horizon" class="about">
+        <div class="container">
+
+            <div class="about__content">
+                <p class="section-eyebrow" data-i18n="about.eyebrow">ABOUT HORIZON</p>
+
+                <h2 class="section-title" data-i18n="about.title">
+                    Technology Designed for Better Environmental Management
+                </h2>
+
+                <p class="about__description" data-i18n="about.description">
+                    Horizon develops digital solutions that help organizations simplify environmental processes, organize information and make sustainability management easier to understand and control.
+                </p>
             </div>
 
-            <nav class="footer__navigation" aria-label="Footer navigation">
-                <a href="#home">Product</a>
-                <a href="#features">Features</a>
-                <a href="#scopes">Emission Scopes</a>
-                <a href="#how-it-works">How It Works</a>
-                <a href="#plans">Plans</a>
-                <a href="#about-horizon">About Horizon</a>
-                <span class="footer__pending-link">Terms &amp; Conditions</span>
-            </nav>
-        </div>
+            <div class="about__team">
 
-        <div class="footer__bottom">
-            <p>&copy; 2026 Horizon. All rights reserved.</p>
+                <div class="about__team-header">
+                    <span data-i18n="about.teamEyebrow">DEVELOPMENT TEAM</span>
+
+                    <h3 data-i18n="about.teamTitle">Meet the Team Behind EcoTrack</h3>
+
+                    <p data-i18n="about.teamDescription">
+                        EcoTrack is developed by the Horizon team as part of our commitment to building technology for more organized and understandable environmental management.
+                    </p>
+                </div>
+
+                <div class="about__team-grid">
+
+                    <article class="team-member">
+                        <div class="team-member__avatar" aria-hidden="true">JT</div>
+                        <h4>Javier Oswaldo Tello Murga</h4>
+                        <p data-i18n="about.developer">Developer</p>
+                    </article>
+
+                    <article class="team-member">
+                        <div class="team-member__avatar" aria-hidden="true">RT</div>
+                        <h4>Rolando Andre Torres Diaz</h4>
+                        <p data-i18n="about.developer">Developer</p>
+                    </article>
+
+                    <article class="team-member">
+                        <div class="team-member__avatar" aria-hidden="true">AL</div>
+                        <h4>Alex Rodrigo Lacuta Lima</h4>
+                        <p data-i18n="about.developer">Developer</p>
+                    </article>
+
+                    <article class="team-member">
+                        <div class="team-member__avatar" aria-hidden="true">AE</div>
+                        <h4>Aaron André Espinoza Flores</h4>
+                        <p data-i18n="about.developer">Developer</p>
+                    </article>
+
+                    <article class="team-member">
+                        <div class="team-member__avatar" aria-hidden="true">HP</div>
+                        <h4>Harrison Hubert Payesa Torres</h4>
+                        <p data-i18n="about.developer">Developer</p>
+                    </article>
+
+                </div>
+
+            </div>
+
         </div>
-    </div>
-</footer>
-<!-- ===== FOOTER END ===== -->
+    </section>
+    <!-- ===== ABOUT HORIZON END ===== -->
+
+    <!-- ===== FOOTER START ===== -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__top">
+
+                <div class="footer__brand">
+                    <a class="footer__logo" href="#home" aria-label="EcoTrack home" data-i18n-aria-label="a11y.home">
+                        <img src="assets/images/ecotrack-logo.png" alt="EcoTrack">
+                    </a>
+
+                    <p data-i18n="footer.description">
+                        Carbon footprint management for modern organizations.
+                    </p>
+                </div>
+
+                <nav class="footer__navigation" aria-label="Footer navigation" data-i18n-aria-label="a11y.footerNavigation">
+                    <a href="#home" data-i18n="footer.product">Product</a>
+                    <a href="#features" data-i18n="footer.features">Features</a>
+                    <a href="#emission-scopes" data-i18n="footer.scopes">Emission Scopes</a>
+                    <a href="#how-it-works" data-i18n="footer.howItWorks">How It Works</a>
+                    <a href="#plans" data-i18n="footer.plans">Plans</a>
+                    <a href="#about-horizon" data-i18n="footer.about">About Horizon</a>
+                    <span class="footer__pending-link" data-i18n="footer.terms">Terms &amp; Conditions</span>
+                </nav>
+
+            </div>
+
+            <div class="footer__bottom">
+                <p data-i18n="footer.rights">&copy; 2026 Horizon. All rights reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+    <!-- ===== FOOTER END ===== -->
+
+</main>
 
 <script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>
