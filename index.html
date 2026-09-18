@@ -22,6 +22,8 @@
     <link rel="stylesheet" href="css/scopes.css">
     <link rel="stylesheet" href="css/how-it-works.css">
     <link rel="stylesheet" href="css/standards.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/about.css">
 </head>
 <body>
 
@@ -567,6 +569,65 @@
         </div>
     </section>
     <!-- ===== FINAL CTA END ===== -->
+
+    <!-- ===== CONTACT START ===== -->
+    <section id="contact" class="contact">
+        <div class="container contact__layout">
+
+            <div class="contact__content">
+                <p class="section-eyebrow">CONTACT</p>
+                <h2 class="section-title">Let's Talk About Your Environmental Management Needs</h2>
+
+                <p class="contact__intro">
+                    Tell us about your organization and how you currently manage emissions information. We can help you explore how EcoTrack could fit your environmental management process.
+                </p>
+
+                <div class="contact__benefits">
+                    <p>Explore the EcoTrack plan that fits your organization.</p>
+                    <p>Understand how emissions management can be centralized.</p>
+                    <p>Learn how EcoTrack supports different levels of environmental management.</p>
+                </div>
+            </div>
+
+            <form class="contact-form">
+                <div class="contact-form__group">
+                    <label for="company-name">Company Name</label>
+                    <input id="company-name" name="companyName" type="text" autocomplete="organization" required>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="corporate-email">Corporate Email</label>
+                    <input id="corporate-email" name="corporateEmail" type="email" autocomplete="email" required>
+                </div>
+
+                <div class="contact-form__row">
+                    <div class="contact-form__group">
+                        <label for="sector">Sector</label>
+                        <input id="sector" name="sector" type="text" required>
+                    </div>
+
+                    <div class="contact-form__group">
+                        <label for="phone">Phone <span>(Optional)</span></label>
+                        <input id="phone" name="phone" type="tel" autocomplete="tel">
+                    </div>
+                </div>
+
+                <div class="contact-form__group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us briefly about your environmental management needs." required></textarea>
+                </div>
+
+                <label class="contact-form__consent">
+                    <input name="consent" type="checkbox" required>
+                    <span>I agree to be contacted regarding my request.</span>
+                </label>
+
+                <button class="button button--primary contact-form__submit" type="submit">Send Request</button>
+            </form>
+
+        </div>
+    </section>
+    <!-- ===== CONTACT END ===== -->
 </main>
 
 <script src="js/i18n.js"></script>
