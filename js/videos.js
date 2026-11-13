@@ -4,12 +4,14 @@
 
 const videoSources = {
   product: {
-    youtubeUrl: "",
-    streamUrl: "",
+    youtubeUrl: "https://www.youtube.com/watch?v=3iLadLkXpX8",
+    streamUrl:
+      "https://upcedupe-my.sharepoint.com/:v:/g/personal/u202221024_upc_edu_pe/IQBNQ0ReOzCUQ6fVcRckNCpiAZuD37qzTzPNyMf5mEDdGns?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=JcbKrf",
   },
   team: {
-    youtubeUrl: "",
-    streamUrl: "",
+    youtubeUrl: "https://youtu.be/nA3qwXaTrcs",
+    streamUrl:
+      "https://upcedupe-my.sharepoint.com/:v:/g/personal/u20241g396_upc_edu_pe/IQAFBjnBRmXkQa2c-vyXxzIgAa0BE3k-NJIoUeiQuUkofJY?e=NXGqhN&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D",
   },
 };
 
