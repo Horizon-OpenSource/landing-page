@@ -4,11 +4,25 @@ const menuToggle = document.querySelector(".navbar__menu-toggle");
 const navigation = document.querySelector(".navbar__navigation");
 const navigationLinks = document.querySelectorAll(".navbar__link");
 
+function updateMobileMenuLabel() {
+  if (!menuToggle || !navigation) return;
+
+  const language = document.documentElement.lang.startsWith("es") ? "es" : "en";
+  const key = navigation.classList.contains("is-open")
+    ? "a11y.closeNavigation"
+    : "a11y.openNavigation";
+
+  menuToggle.setAttribute("aria-label", getTranslation(language, key));
+}
+
+document.addEventListener("ecotrack:languagechange", updateMobileMenuLabel);
+updateMobileMenuLabel();
+
 function closeMobileMenu() {
   navigation.classList.remove("is-open");
 
   menuToggle.setAttribute("aria-expanded", "false");
-  menuToggle.setAttribute("aria-label", "Open navigation menu");
+  updateMobileMenuLabel();
 }
 
 if (menuToggle && navigation) {
@@ -17,10 +31,7 @@ if (menuToggle && navigation) {
 
     menuToggle.setAttribute("aria-expanded", String(isOpen));
 
-    menuToggle.setAttribute(
-      "aria-label",
-      isOpen ? "Close navigation menu" : "Open navigation menu",
-    );
+    updateMobileMenuLabel();
   });
 
   navigationLinks.forEach((link) => {
