@@ -280,6 +280,21 @@ const translations = {
       developer: "Developer",
     },
 
+    videos: {
+      productEyebrow: "DISCOVER ECOTRACK",
+      productTitle: "See How EcoTrack Can Help Your Organization",
+      productDescription:
+        "Discover the challenges EcoTrack addresses, its key capabilities and how it helps organizations manage environmental information more effectively.",
+
+      teamEyebrow: "BEHIND ECOTRACK",
+      teamTitle: "Meet the Team and Our Development Journey",
+      teamDescription:
+        "Learn how the Horizon team worked together to develop EcoTrack, the challenges encountered and the lessons learned throughout the project.",
+
+      comingSoon: "Video coming soon",
+      watchStream: "Watch on Microsoft Stream",
+    },
+
     footer: {
       description: "Carbon footprint management for modern organizations.",
       product: "Product",
@@ -571,6 +586,21 @@ const translations = {
       teamDescription:
         "EcoTrack es desarrollado por el equipo Horizon como parte de nuestro compromiso con la creación de tecnología para una gestión ambiental más organizada y comprensible.",
       developer: "Desarrollador",
+    },
+
+    videos: {
+      productEyebrow: "DESCUBRE ECOTRACK",
+      productTitle: "Descubre cómo EcoTrack puede ayudar a tu organización",
+      productDescription:
+        "Conoce los desafíos que aborda EcoTrack, sus principales funcionalidades y cómo ayuda a las organizaciones a gestionar su información ambiental de manera más eficiente.",
+
+      teamEyebrow: "DETRÁS DE ECOTRACK",
+      teamTitle: "Conoce al equipo y nuestro proceso de desarrollo",
+      teamDescription:
+        "Descubre cómo el equipo Horizon trabajó en conjunto para desarrollar EcoTrack, los desafíos que enfrentamos y los aprendizajes obtenidos durante el proyecto.",
+
+      comingSoon: "Video próximamente",
+      watchStream: "Ver en Microsoft Stream",
     },
 
     footer: {
