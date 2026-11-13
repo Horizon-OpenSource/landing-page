@@ -123,7 +123,8 @@ const revealElements = document.querySelectorAll(
     ".plans__header, .plan-card, " +
     ".final-cta__content, " +
     ".contact__content, .contact-form, " +
-    ".about__content, .about__team-header, .team-member",
+    ".about__content, .about__team-header, .team-member, " +
+    ".video-showcase__header, .video-showcase__player",
 );
 
 if ("IntersectionObserver" in window) {
